@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:equatable/equatable.dart';
 import 'package:very_good_core_hooks/very_good_core_hooks.dart';
 
@@ -61,7 +63,9 @@ class VeryGoodCoreConfiguration extends Equatable {
     AppleApplicationId? macOsApplicationId,
     AndroidApplicationId? androidApplicationId,
     AndroidNamespace? androidNamespace,
-  })  : projectName = projectName ?? 'my_app',
+  })  : projectName = projectName ??
+            // proje kök klasör ismi
+            _getRootFolderName(),
         organizationName = organizationName ?? 'com.example',
         description = description ?? 'A Very Good App' {
     this.windowsApplicationId = windowsApplicationId ??
@@ -152,6 +156,12 @@ class VeryGoodCoreConfiguration extends Equatable {
           : AndroidApplicationId(applicationId),
       description: description,
     );
+  }
+
+  static String _getRootFolderName() {
+    final currentDir = Directory.current.path;
+    final segments = currentDir.split(Platform.pathSeparator);
+    return segments.isNotEmpty ? segments.last : 'my_app';
   }
 
   /// {@macro very_good_core_configuration_variables.project_name}

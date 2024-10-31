@@ -1,6 +1,6 @@
-name: very_good_core
-description: A Very Good Flutter app created by Very Good Ventures.
-repository: https://github.com/VeryGoodOpenSource/very_good_templates/tree/main/very_good_core
+name: arteria_flutter_template
+description: A Arteria Flutter Template.
+repository: https://github.com/omerkaansaglam/very_good_templates
 version: 0.9.0
 
 environment:
@@ -10,7 +10,7 @@ vars:
   project_name:
     type: string
     description: The project name
-    default: my_app
+    default: arteria_flutter_app
     prompt: What is the project name?
   org_name:
     type: string
@@ -24,5 +24,5 @@ vars:
   description:
     type: string
     description: A short project description
-    default: A Very Good App
+    default: A Arteria Flutter App
     prompt: What is the project description?

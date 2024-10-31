@@ -1,8 +1,8 @@
-import 'package:faladdin_flutterapp/core/managers/network_manager/model/api_result.dart';
-import 'package:faladdin_flutterapp/core/managers/network_manager/model/network_exceptions.dart';
-import 'package:faladdin_flutterapp/core/managers/network_manager/network_manager.dart';
-import 'package:faladdin_flutterapp/ui/views/main/model/data.dart';
-import 'package:faladdin_flutterapp/ui/views/main/service/IMainService.dart';
+import 'package:{{project_name.snakeCase()}}/core/managers/network_manager/model/api_result.dart';
+import 'package:{{project_name.snakeCase()}}/core/managers/network_manager/model/network_exceptions.dart';
+import 'package:{{project_name.snakeCase()}}/core/managers/network_manager/network_manager.dart';
+import 'package:{{project_name.snakeCase()}}/ui/views/main/model/data.dart';
+import 'package:{{project_name.snakeCase()}}/ui/views/main/service/IMainService.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 final mainServiceProvider = Provider<IMainService>(_MainService.new);

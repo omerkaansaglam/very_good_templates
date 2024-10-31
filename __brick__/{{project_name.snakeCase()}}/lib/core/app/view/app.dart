@@ -1,5 +1,5 @@
-import 'package:faladdin_flutterapp/core/app/view/main_build.dart';
-import 'package:faladdin_flutterapp/core/router/app_router.dart';
+import 'package:{{project_name.snakeCase()}}/core/app/view/main_build.dart';
+import 'package:{{project_name.snakeCase()}}/core/router/app_router.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 

@@ -1,4 +1,4 @@
-import 'package:faladdin_flutterapp/ui/views/main/service/main_service.dart';
+import 'package:{{project_name.snakeCase()}}/ui/views/main/service/main_service.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 import '../model/data.dart';

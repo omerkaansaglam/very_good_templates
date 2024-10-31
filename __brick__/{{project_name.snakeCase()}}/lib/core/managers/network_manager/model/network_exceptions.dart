@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:faladdin_flutterapp/core/managers/network_manager/model/api_error.dart';
+import 'package:{{project_name.snakeCase()}}/core/managers/network_manager/model/api_error.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'network_exceptions.freezed.dart';

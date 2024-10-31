@@ -1,5 +1,5 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:faladdin_flutterapp/ui/views/main/view_model/main_view_model.dart';
+import 'package:{{project_name.snakeCase()}}/ui/views/main/view_model/main_view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 

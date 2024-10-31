@@ -67,7 +67,7 @@ class VeryGoodCoreConfiguration extends Equatable {
             // proje kök klasör ismi
             _getRootFolderName(),
         organizationName = organizationName ?? 'com.example',
-        description = description ?? 'A Very Good App' {
+        description = description ?? 'A Arteria App' {
     this.windowsApplicationId = windowsApplicationId ??
         WindowsApplicationId.fallback(
           organizationName: this.organizationName,

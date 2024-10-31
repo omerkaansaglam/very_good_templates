@@ -63,11 +63,18 @@ class VeryGoodCoreConfiguration extends Equatable {
     AppleApplicationId? macOsApplicationId,
     AndroidApplicationId? androidApplicationId,
     AndroidNamespace? androidNamespace,
-  })  : projectName = projectName ??
-            // proje kök klasör ismi
-            _getRootFolderName(),
+  })  : projectName = projectName ?? 'arteria_flutter_app',
         organizationName = organizationName ?? 'com.example',
         description = description ?? 'A Arteria App' {
+    // Klasör yolunu ayarla
+    final currentDir = Directory.current.path;
+    final projectDir = Directory('$currentDir/$projectName');
+
+    // Eğer dizin yoksa oluştur
+    if (!projectDir.existsSync()) {
+      projectDir.createSync(recursive: true);
+    }
+
     this.windowsApplicationId = windowsApplicationId ??
         WindowsApplicationId.fallback(
           organizationName: this.organizationName,
@@ -88,6 +95,7 @@ class VeryGoodCoreConfiguration extends Equatable {
           organizationName: this.organizationName,
           projectName: this.projectName,
         );
+
     if (!this.androidApplicationId.isValid) {
       throw InvalidAndroidApplicationIdFormat(this.androidApplicationId);
     }
@@ -156,12 +164,6 @@ class VeryGoodCoreConfiguration extends Equatable {
           : AndroidApplicationId(applicationId),
       description: description,
     );
-  }
-
-  static String _getRootFolderName() {
-    final currentDir = Directory.current.path;
-    final segments = currentDir.split(Platform.pathSeparator);
-    return segments.isNotEmpty ? segments.last : 'my_app';
   }
 
   /// {@macro very_good_core_configuration_variables.project_name}

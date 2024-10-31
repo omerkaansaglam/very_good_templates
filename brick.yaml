@@ -10,7 +10,7 @@ vars:
   project_name:
     type: string
     description: The project name
-    default: package:{{project_name.snakeCase()}}
+    default: arteria_flutter_app
     prompt: What is the project name?
   org_name:
     type: string

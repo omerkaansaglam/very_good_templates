@@ -1,1 +1,0 @@
-mason add -g arteria_flutter_template --git-url https://github.com/omerkaansaglam/very_good_templates

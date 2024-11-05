@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:{{project_name.snakeCase()}}/env/env.dart';
 import 'package:dio/dio.dart';
 
 import 'package:hooks_riverpod/hooks_riverpod.dart';
@@ -9,7 +10,7 @@ class _NetworkManager {
   _NetworkManager(this.ref) {
     _dio = Dio(
       BaseOptions(
-        baseUrl: 'https://jsonplaceholder.typicode.com/',
+        baseUrl: Env.apiUrl,
         // connectTimeout: 15000,
         // receiveTimeout: 15000,
       ),

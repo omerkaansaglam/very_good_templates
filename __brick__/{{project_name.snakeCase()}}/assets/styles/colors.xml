@@ -1,0 +1,60 @@
+<resources>
+    <!-- Primary colors Light -->
+    <color name="primary">#6200EE</color>
+    <color name="primary_variant">#3700B3</color>
+    <color name="secondary">#03DAC6</color>
+    <color name="secondary_variant">#018786</color>
+    <color name="background">#FFFFFF</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="error">#B00020</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="on_secondary">#000000</color>
+    <color name="on_background">#000000</color>
+    <color name="on_surface">#000000</color>
+    <color name="on_error">#FFFFFF</color>
+    <!-- Primary colors Dark -->
+    <color name="primary_dark">#BB86FC</color>
+    <color name="primary_variant_dark">#3700B3</color>
+    <color name="secondary_dark">#03DAC6</color>
+    <color name="secondary_variant_dark">#018786</color>
+    <color name="background_dark">#121212</color>
+    <color name="surface_dark">#121212</color>
+    <color name="error_dark">#CF6679</color>
+    <color name="on_primary_dark">#000000</color>
+    <color name="on_secondary_dark">#000000</color>
+    <color name="on_background_dark">#FFFFFF</color>
+    <color name="on_surface_dark">#FFFFFF</color>
+    <color name="on_error_dark">#000000</color>
+    <!-- Global colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="grey">#9E9E9E</color>
+    <color name="grey_dark">#424242</color>
+    <color name="grey_light">#F5F5F5</color>
+    <color name="grey_lighter">#FAFAFA</color>
+    <color name="grey_darker">#616161</color>
+    <color name="grey_lightest">#E0E0E0</color>
+    <color name="grey_darkest">#212121</color>
+    <color name="red">#F44336</color>
+    <color name="red_dark">#D32F2F</color>
+    <color name="red_light">#FFCDD2</color>
+    <color name="red_lighter">#EF9A9A</color>
+    <color name="red_darker">#B71C1C</color>
+    <color name="red_lightest">#FFEBEE</color>
+    <color name="red_darkest">#C62828</color>
+    <color name="green">#4CAF50</color>
+    <color name="green_dark">#388E3C</color>
+    <color name="green_light">#C8E6C9</color>
+    <color name="green_lighter">#A5D6A7</color>
+    <color name="green_darker">#2E7D32</color>
+    <color name="green_lightest">#E8F5E9</color>
+    <color name="green_darkest">#1B5E20</color>
+    <color name="blue">#2196F3</color>
+    <color name="blue_dark">#1976D2</color>
+    <color name="blue_light">#BBDEFB</color>
+    <color name="blue_lighter">#90CAF9</color>
+    <color name="blue_darker">#1565C0</color>
+    <color name="blue_lightest">#E3F2FD</color>
+    <color name="blue_darkest">#0D47A1</color>
+</resources>
